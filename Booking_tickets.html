@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOLARIS GALLERY</title>
+    <!--style-->
+    <link rel="stylesheet" href="css/style5.css">
+</head>
+<body>
+   <!--Header Start-->
+   <header id="home">
+    <div class="navbar">
+        <nav>
+            <a href="#home" id="logo"><img src="image/_Up_ Sticker for Sale by AndyWestface.jpg" alt="">SOLARIS GALLERY</a>
+            <ul>
+                <li><a href="Index.html">Home</a></li>
+                <li><a href="News.html">News</a></li>
+                    <div class="dropdown">
+                <li class="nav-link"><a href="Space_stations.html">Space Stations</a>
+                        <div class="dropdown-options">
+                          <a href="About_astronomy.html">About astronomy</a>
+                          <a href="Missiles_and_satellites.html">Missiles and satellites</a>
+                          <a href="Planets_and_galaxies.html">Planets and galaxies</a>
+                          <a href="How to become an astronaut .html">How to become an astronaut</a>
+                          <a href="Booking_tickets.html">Booking Tickets</a>
+                        </div>
+                      </div>
+                <li><a href="contact.html">Contact</a></li>
+                <li class="log"><a href="Log_in.html" class="active">Rigstration</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+ <!--Header end-->
+
+ <h1>Wlcome , You can book through Forum to attend the exhibition.</h1>
+    <form action="php/booking.php" method="post">
+        <section class="place">
+            <section class="container">
+                <h1>Booking Ticket</h1>
+                <div class="form" action="#">
+                    <div class="input-box">
+                        <label>Name</label>
+                        <input required="" name="name" placeholder="Enter your name" type="text">
+                    </div>
+
+                    <div class="input-box address">
+                        <label>Email</label>
+                        <input required="" name="email" placeholder="Enter your Email" type="text">
+                    </div>
+                    <div class="column">
+                        <div class="input-box">
+                            <label>Phone Number</label>
+                            <input required="" name="phone" placeholder="Enter phone number" type="tel">
+                        </div>
+                        <div class="input-box">
+                            <label>Booking Date & Time</label>
+                            <input required="" name="booking_date" type="datetime-local">
+                        </div>
+                    </div>
+                    <div class="type-box">
+                        <label>Choose Ticket Type</label>
+                        <div class="type-option">
+                            <div class="type">
+                                <input checked="" name="ticket_type" id="check-standard" value="standard" type="radio">
+                                <label for="check-standard">Standard</label>
+                            </div>
+                            <div class="type">
+                                <input name="ticket_type" id="check-vip" value="vip" type="radio">
+                                <label for="check-vip">VIP</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button>Submit</button>
+                </div>
+            </section>
+        </section>
+    </form>
+    <footer class="footer-s">
+        <p>&copy; 2023 SOLARIS GALLERY</p>
+    </footer>
+</body>
+</html>

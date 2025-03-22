@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    
+    body{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    
+    ul{
+      list-style:none;
+    }
+    
+    a{
+    text-decoration: none;
+    }
+    
+    /*Header*/
+    header{
+      background-color:white ;
+      height: 30vh;
+    }
+    
+    header .navbar{
+    background-color:white ;
+    border-bottom: 1px solid #ccc;
+      /*position: fixed;*/
+    width: 100%;
+    padding:1.5rem 2rem ;
+    }
+    
+    header .navbar nav{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1280px;
+    margin: auto;
+    }
+    
+    #home #logo{
+    color:#163D5D ;
+    font-size: 24px;
+    font-weight: 600;
+    
+    }
+    
+    header .navbar nav ul{
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    }
+    
+    header .navbar nav ul a {
+      margin: 0 15px;
+      color: #163D5D ;
+      font-weight:600 ;
+      padding: 9px ;
+    }
+    
+    nav img{
+    width:50px;
+    vertical-align: middle;
+    margin: 0 15px;
+    }
+    
+    header .navbar nav ul a:hover {
+      border-bottom: 3px solid #a0efee;
+    }
+   
+    header .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 95%;
+    }
+    
+    header .content h1{
+      color: #3e7070;
+      font-size: 66px;
+    }
+    
+  
+    .dropdown {
+      justify-content:center;
+      align-items:center;
+      display: inline-block;
+      position: relative;
+      display:flex;
+    }
+    
+    .nav-link{
+      border:none;
+      border-radius:5px;
+      font-size:16px;
+      cursor:pointer;
+    }
+    
+    .dropdown-options {
+      display: none;
+      position: absolute;
+      overflow: auto;
+      background-color:#fff;
+      border-radius:5px;
+      box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+    }
+    
+    .dropdown:hover .dropdown-options {
+      display: block;
+    }
+    
+    .dropdown-options a {
+      display: block;
+      color: #b08f8f;
+      padding: 5px;
+      text-decoration: none;
+    }
+    
+    .dropdown-options a:hover {
+      color: #0a0a23;
+      background-color: #ddd;
+      border-radius:5px;
+    }
+    .footer-s {
+      background-color: #163D5D;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+
+h1{
+    color:#163D5D;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 80px;
+}
+
+.container h1{
+    color: #ffff;
+}
+
+
+.place {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: center;
+}
+
+.container {
+    position: relative;
+    max-width: 600px; 
+    width: 100%;
+    background: #376b92;
+    padding: 25px;
+    border-radius: 8px;
+    margin: 0 auto; 
+    margin-bottom: 80px;
+}
+
+    .container header {
+        font-size: 3rem;
+        color: white;
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: 30px; 
+        margin-top:50px;
+    }
+
+    .container .form {
+        margin-top: 15px;
+    }
+
+.form .input-box {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.input-box label {
+    color: black;
+}
+
+.form :where(.input-box input, .select-box) {
+    position: relative;
+    height: 35px;
+    width: 100%;
+    outline: none;
+    font-size: 1rem;
+    color: black;
+    margin-top: 5px;
+    border: 1px solid;
+    border-radius: 6px;
+    padding: 0 15px;
+    background: white;
+}
+
+.input-box input:focus {
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.form .column {
+    display: flex;
+    column-gap: 15px;
+}
+
+.form .type-box {
+    margin-top: 30px;
+}
+
+.form :where(.type-option, .gender) {
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+    flex-wrap: wrap;
+}
+
+.form .type {
+    column-gap: 10px;
+}
+
+.type input {
+    accent-color: rgb(153, 153, 167);
+}
+
+.form :where(.type input, .type label) {
+    cursor: pointer;
+}
+
+.type label {
+    color: #000;
+}
+
+.form button {
+    height: 40px;
+    width: 100%;
+    color: #000;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 30px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    background: white;
+}
+
+    .form button:hover {
+        background: grey;
+    }
+
+@media (min-width: 600px) {
+    .container {
+        height: auto;
+        min-height: 400px; 
+    }
+}

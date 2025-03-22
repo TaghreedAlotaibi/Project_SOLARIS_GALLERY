@@ -1,0 +1,224 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+  
+  body{
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  
+  ul{
+    list-style:none;
+  }
+  
+  a{
+  text-decoration: none;
+  }
+  
+  /*Header*/
+  header{
+    background-color:white ;
+    height: 13vh;
+  }
+  
+  header .navbar{
+  background-color:white ;
+  border-bottom: 1px solid #ccc;
+    /*position: fixed;*/
+  width: 100%;
+  padding:1.5rem 2rem ;
+  }
+  
+  header .navbar nav{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1280px;
+  margin: auto;
+  }
+  
+  #home #logo{
+  color:#163D5D ;
+  font-size: 24px;
+  font-weight: 600;
+  
+  }
+  
+  header .navbar nav ul{
+  display: flex;
+  justify-content: center;
+  align-items:center ;
+  }
+  
+  header .navbar nav ul a {
+    margin: 0 15px;
+    color: #163D5D ;
+    font-weight:600 ;
+    padding: 9px ;
+  }
+  
+  nav img{
+  width:50px;
+  vertical-align: middle;
+  margin: 0 15px;
+  }
+  
+  header .navbar nav ul a:hover {
+    border-bottom: 3px solid #a0efee;
+  }
+ 
+  header .content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 95%;
+  }
+  
+  header .content h1{
+    color: #3e7070;
+    font-size: 66px;
+  }
+  
+
+  .dropdown {
+    justify-content:center;
+    align-items:center;
+    display: inline-block;
+    position: relative;
+    display:flex;
+  }
+  
+  .nav-link{
+    border:none;
+    border-radius:5px;
+    font-size:16px;
+    cursor:pointer;
+  }
+  
+  .dropdown-options {
+    display: none;
+    position: absolute;
+    overflow: auto;
+    background-color:#fff;
+    border-radius:5px;
+    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+  }
+  
+  .dropdown:hover .dropdown-options {
+    display: block;
+  }
+  
+  .dropdown-options a {
+    display: block;
+    color: #b08f8f;
+    padding: 5px;
+    text-decoration: none;
+  }
+  
+  .dropdown-options a:hover {
+    color: #0a0a23;
+    background-color: #ddd;
+    border-radius:5px;
+  }
+  .footer-s {
+    background-color: #163D5D;
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
+  
+
+  /* form*/
+
+.contact{
+  min-height: 130vh;
+  padding: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact > div{
+  background: #376b92;
+  padding: 80px;
+  border-radius: 10px;
+  box-shadow: 0 0 2em rgba(0,0,0,0.3);
+  min-width: 80vh;
+}
+
+.contact h1 {
+ 
+  font-size: 45px;
+  color: #fff;
+}
+
+
+
+.contact form{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.contact input,
+.contact textarea{
+  border: none;
+  padding: 9px;
+  width: 100%;
+  border-radius: 5px;
+  margin: 0.5em 0 1em 0;
+  font-size: 1.1em;
+  background: #fffefeee;
+  color: #0b0202;
+}
+
+.contact label{
+  color: #ffffff;
+ 
+
+}
+
+.contact textarea{
+  resize: none;
+  height: 200px;
+  font-family: sans-serif;
+}
+
+.contact input:focus,
+.contact textarea:focus{
+  outline: none;
+}
+
+.contact input::placeholder,
+.contact textarea::placeholder{
+  color: #bababa;
+}
+
+.contact button{
+border: none;
+cursor: pointer;
+width: 100%;
+padding: 0.8em;
+background-color: rgb(93, 155, 155);
+color: #fff;
+border-radius: 8px;
+font-size: 1.2em;
+transition: 0.3s;
+}
+
+.contact button:hover{
+background-color: #e16628;
+
+}
+
+@media screen  and(max-width:500px) {
+  .contact{
+    font-size: 14px;
+  }
+  
+}
+
+  
